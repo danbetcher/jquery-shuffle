@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Shuffle Children Plugin Demo by @danbetcher</title>
+    <style type="text/css">
+    .container { margin: 0 auto; width: 600px; }
+    
+    .boxes { display: block; }
+    .boxes { padding: 10px 0px; zoom: 1; }
+    .boxes:before, .control-group:after { content: ""; display: table; }
+    .boxes:after { clear: both; }
+    
+    .box { float: left; width: 100px; height: 100px; margin: 10px;}
+    .box.green {background: green; }
+    .box.red {background: red; }
+    .box.blue {background: blue; }
+    .box.yellow {background: yellow; }
+    .box.orange {background: orange; }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery Shuffle Children Plugin Demo</h1>
+        <p>Check out the <a href="https://github.com/danbetcher/jquery-shuffle-children">jQuery Shuffle Children Plugin project page on GitHub</a>.</p>
+    
+        <p><strong>Using an Unordered List:</strong></p>
+        <ul class="shuffle">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+        </ul>
+        
+        <p><strong>Using block-level elements:</strong></p>
+        <div class="boxes shuffle">
+            <div class="box green"></div>
+            <div class="box red"></div>
+            <div class="box blue"></div>
+            <div class="box yellow"></div>
+            <div class="box orange"></div>
+        </div>
+        
+        <p><button id="shuffle-button2">Shuffle!</button></p>
+    </div>
+      
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.shuffle-children.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#shuffle-button").on("click", function(e) {
+           e.preventDefault();
+           $(".shuffle").shuffleChildren(); 
+        });
+    });
+    </script>
+</body>
+</html>

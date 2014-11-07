@@ -1,6 +1,6 @@
-/*! https://github.com/danbetcher/jquery-shuffle-children by @danbetcher */
+/*! https://github.com/danbetcher/jquery-shuffle by @danbetcher */
 ;(function ( $ ) {
-    $.fn.shuffleChildren = function() {
+    $.fn.shuffle = function() {
         
         // Loop through each instance
         $.each(this.get(), function(index, el) {

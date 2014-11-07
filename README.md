@@ -1,5 +1,5 @@
 
-# jQuery Shuffle Children Plugin
+# jQuery Shuffle Plugin
 
 A simple jQuery plugin to randomly sort the children of an element in the DOM.
 
@@ -8,7 +8,7 @@ A simple jQuery plugin to randomly sort the children of an element in the DOM.
 Use the plugin as follows:
 
 ```js
-$('.container').shuffleChildren(); 
+$('.container').shuffle(); 
 ```
 
 This will collected all of the child elements inside the passed element, and sort them into a random order.

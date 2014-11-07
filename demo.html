@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>jQuery Shuffle Children Plugin Demo by @danbetcher</title>
+    <title>jQuery Shuffle Plugin Demo by @danbetcher</title>
     <style type="text/css">
     .container { margin: 0 auto; width: 600px; }
     
@@ -22,8 +22,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>jQuery Shuffle Children Plugin Demo</h1>
-        <p>Check out the <a href="https://github.com/danbetcher/jquery-shuffle-children">jQuery Shuffle Children Plugin project page on GitHub</a>.</p>
+        <h1>jQuery Shuffle Plugin Demo</h1>
+        <p>Check out the <a href="https://github.com/danbetcher/jquery-shuffle">jQuery Shuffle Plugin project page on GitHub</a>.</p>
     
         <p><strong>Using an Unordered List:</strong></p>
         <ul class="shuffle">
@@ -48,12 +48,12 @@
       
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="jquery.shuffle-children.js"></script>
+    <script src="jquery.shuffle.js"></script>
     <script>
     $(document).ready(function() {
         $("#shuffle-button").on("click", function(e) {
            e.preventDefault();
-           $(".shuffle").shuffleChildren(); 
+           $(".shuffle").shuffle(); 
         });
     });
     </script>

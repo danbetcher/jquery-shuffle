@@ -1,0 +1,1 @@
+(function(e){e.fn.shuffleChildren=function(){e.each(this.get(),function(t,n){var r=e(n);var i=r.children();i.sort(function(){return.5-Math.random()});r.empty();i.appendTo(r)})}})(jQuery)
